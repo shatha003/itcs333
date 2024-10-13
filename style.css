@@ -99,25 +99,30 @@ h1 {
     font-size: 36px;
     font-weight: 600;
 }
-
 .row {
-  
-    margin-top: 0%;
+                      
+    margin-top: 1%;
     display: flex;
     justify-content: space-between;
 
 }
-.schedule-col {
- flex-basis: 18%;
- background-color: rgb(255, 255, 255);
- border-radius: 8px;
- margin-bottom: 5%;
- padding: 50px 10px;
- box-sizing: border-box;
- transition: 0.5;
- cursor: pointer;
-
+.schedule-col{
+    display: inline-block;
+    text-decoration: none;
+    color: #020101;
+    border: 1px solid #e9c80c;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
 }
+.schedule-col:hover{
+    border: 1px solid #e7e771;
+    background:#bbbb0d ;
+    transition: 1s;
+}
+
 
 .gallery {
     background:url(https://kidzworldkindergarten.com/wp-content/uploads/layerslider/projects/LayerSlider-1/hero-3.jpg) no-repeat;
