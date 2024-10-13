@@ -92,33 +92,56 @@ nav img{
 
 /*------ schedule styling: sets styles for headings and schedule columns.---*/
 
-h1 {
-    font-size: 36px;
-    font-weight: 600;
+.weekly-schedule h1{
+    text-align: center;
+    padding: 25px 0px; 
+    color: #fff;
 }
-.row {
-                      
-    margin-top: 1%;
+/*------container styling------*/
+.container{
+    width: 1170px;
+    margin: auto;
+    flex-wrap:wrap ;
+    justify-content: space-around;
     display: flex;
-    justify-content: space-between;
+   
+   
+}
+.days{
+    flex-basis: 25%;
+    margin: 10px;
+    text-align: center;
+    padding:20px 0px ;
+    background: rgb(248, 248, 248);
+    box-shadow: 0px 0px 10px 3px rgb(255, 248, 144);
+    border-radius: 15px;
+    
+  
+}
+.days h3{
+padding: 10px 0px;
 
 }
-.schedule-col{
-    display: inline-block;
-    text-decoration: none;
-    color: #020101;
-    border: 1px solid #e9c80c;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
+
+.days p{
+    font-size: 14px;
+}
+/*-------Changes the background color on hover-----*/
+.days:hover{
+    background: rgb(254, 255, 168) ;
+}
+.days:hover h3, .days:hover p{
+    color: rgb(0, 0, 0);
+}
+/*-------- Sets a background image for elements with the class------*/
+.SCHEDULE{
+
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(kid.jpg);
+    background-position: center;
+    background-size: cover;
     position: relative;
-    cursor: pointer;
 }
-.schedule-col:hover{
-    border: 1px solid #e7e771;
-    background:#d8d80b ;
-    transition: 1s;
-}
+
 /*applies background image and grid layout for gallery items & styles individual gallery items and their hover effects*/
 
 .gallery {
