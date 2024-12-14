@@ -27,3 +27,19 @@ async function fetchUOBData() {
     console.error("Error occurred:", error);
   }
 }
+function displayUobData (results){
+    const tableBody = document.getElementById('table-body')
+    results.forEach(result => { 
+        console.log(result); 
+        const tablerow = document.createElement('tr')
+        tableRow.innerHTML= `
+        <td>${result.colleges}</td>
+        <td>${result.colleges}</td>
+        `
+        tableBody.appendChild(tableRow)
+
+    }); 
+        
+    }
+
+document.addEventListener('DOMContentLoaded', fetchUOBData)
